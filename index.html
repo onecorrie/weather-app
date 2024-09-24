@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <!-- Fonts and Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -10,8 +12,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <!-- Axios Library -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <title>Weather app</title>
   </head>
 
   <body>
@@ -20,13 +22,14 @@
         <form class="search-form" id="search-form">
           <input
             type="search"
-            placeholder="Enter a city.."
+            placeholder="Enter a city..."
             required
             class="search-form-input"
             id="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
         </form>
+        <div id="error-message" class="error-message"></div>
       </header>
       <main>
         <div class="weather-app-data">
@@ -60,6 +63,7 @@
         >
       </footer>
     </div>
+    <!-- JavaScript File -->
     <script src="src/index.js"></script>
   </body>
 </html>
