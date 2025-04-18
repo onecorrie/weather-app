@@ -18,7 +18,19 @@ a {
 
 header {
   border-bottom: 1px solid #f9f7fe;
-  padding: 0 0 30px 0;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.error-message {
+  color: red;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 8px 0;
+  text-align: center;
+  display: none;
 }
 
 .search-form-input {
@@ -38,6 +50,7 @@ header {
   margin-left: 5px;
   border-radius: 6px;
   color: white;
+  cursor: pointer;
 }
 
 main {
@@ -47,6 +60,7 @@ main {
 .weather-app-data {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .weather-app-city {
@@ -68,11 +82,13 @@ main {
 
 .weather-app-temperature-container {
   display: flex;
+  align-items: flex-start;
 }
 
 .weather-app-icon {
   width: 88px;
   height: 88px;
+  margin-right: 10px;
 }
 
 .weather-app-temperature {
@@ -88,39 +104,48 @@ main {
 
 .weather-forecast {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 30px;
+  flex-wrap: nowrap;
+}
+
+.weather-forecast-day {
+  text-align: center;
+  flex: 0 0 80px;
+  margin-right: 15px;
 }
 
 .weather-forecast-date {
-  text-align: center;
-  color: rgba(39, 33, 66, 0.4);
   font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 10px;
+  color: rgba(39, 33, 66, 0.4);
+  margin-bottom: 6px;
 }
 
 .weather-forecast-icon {
-  width: 88px;
-  height: 88px;
-  display: block;
-  margin: 0 auto;
-}
-.weather-forecast-temperatures {
-  text-align: center;
-  color: #f65282;
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
+  width: 60px;
+  height: 60px;
 }
 
-.weather-forecast-temperature {
-  padding: 0 10px;
+.weather-forecast-temperatures {
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.weather-forecast-temperature,
+.weather-forecast-temperature-min {
+  padding: 0 6px;
+  font-size: 14px;
+  color: #f65282;
+}
+
+.weather-forecast-temperature-min {
+  color: rgba(39, 33, 66, 0.4);
 }
 
 footer {
   border-top: 1px solid #f9f7fe;
-  padding: 30px 0 0 0;
+  padding-top: 30px;
   text-align: center;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.6);
