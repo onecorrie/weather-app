@@ -2,7 +2,7 @@
 [shecodes]([url](https://www.shecodes.io/)) weather app
 https://corrie-weather.netlify.app/
 
-Description
+Description:
 beginner to intermediate front-end web development
 ✔️ Advanced JavaScript techniques (ES6) to build your first interactive application
 ✔️ How to integrate a live API to fetch live data
